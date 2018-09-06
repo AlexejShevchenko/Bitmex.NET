@@ -49,10 +49,10 @@ namespace Bitmex.NET.Models
 				Symbol = symbol,
 				Side = Enum.GetName(typeof(OrderSide), side),
 				OrderQty = quantity,
-				OrdType = Enum.GetName(typeof(OrderType), OrderType.Stop),
+				OrdType = Enum.GetName(typeof(OrderType), OrderType.StopLimit),
 				StopPx = stopPrice,
 				Price = price,
-				ExecInst = "ReduceOnly,LastPrice",
+				ExecInst = "ReduceOnly,MarkPrice",
 			};
 		}
 	}

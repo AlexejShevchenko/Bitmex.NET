@@ -11,5 +11,6 @@ namespace Bitmex.NET.Models
         Market = 1,
         Limit = 2,
         Stop = 3,
+        StopLimit = 4,
     }
 }
