@@ -86,7 +86,7 @@ namespace Bitmex.NET.Models
                 OrderQty = quantity,
                 OrdType = Enum.GetName(typeof(OrderType), OrderType.Stop),
                 StopPx = stopPrice,
-                Price = price,
+                //Price = price,
                 ExecInst = "ReduceOnly,LastPrice",
             };
         }

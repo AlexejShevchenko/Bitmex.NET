@@ -24,8 +24,12 @@ namespace Bitmex.NET.Models
                     {
                         return $"{a.DisplayNameAttr.DisplayName}={((DateTime?)a.Prop.GetValue(this))?.ToString("yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'fff'Z'")}";
                     }
+                    else if (a.Prop.PropertyType == typeof(bool))
+                    {
+                        return $"{a.DisplayNameAttr.DisplayName}={HttpUtility.UrlEncode(a.Prop.GetValue(this)?.ToString().ToLower())}";
+                    }
 
-                    return $"{a.DisplayNameAttr.DisplayName}={HttpUtility.UrlEncode(a.Prop.GetValue(this)?.ToString())}";
+                        return $"{a.DisplayNameAttr.DisplayName}={HttpUtility.UrlEncode(a.Prop.GetValue(this)?.ToString())}";
                 });
 
             return $"{string.Join("&", @params)}";
