@@ -238,19 +238,19 @@ namespace Bitmex.NET.Dtos
 		public decimal UnrealisedRoePcnt { get; set; }
 
 		[JsonProperty("simpleQty")]
-		public decimal SimpleQty { get; set; }
+		public decimal? SimpleQty { get; set; }
 
 		[JsonProperty("simpleCost")]
-		public decimal SimpleCost { get; set; }
+		public decimal? SimpleCost { get; set; }
 
 		[JsonProperty("simpleValue")]
-		public decimal SimpleValue { get; set; }
+		public decimal? SimpleValue { get; set; }
 
 		[JsonProperty("simplePnl")]
-		public decimal SimplePnl { get; set; }
+		public decimal? SimplePnl { get; set; }
 
 		[JsonProperty("simplePnlPcnt")]
-		public decimal SimplePnlPcnt { get; set; }
+		public decimal? SimplePnlPcnt { get; set; }
 
 		[JsonProperty("avgCostPrice")]
 		public decimal? AvgCostPrice { get; set; }

@@ -12,5 +12,6 @@ namespace Bitmex.NET.Models
         Limit = 2,
         Stop = 3,
         StopLimit = 4,
+        MarketIfTouched = 5,
     }
 }
